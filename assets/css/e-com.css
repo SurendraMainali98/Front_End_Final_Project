@@ -39,7 +39,25 @@ ul li a{
 	color: white;
 }
 
-ul li a:hover{
+ul li a:hover, ul li a.active{
 	color: rgb(3, 212, 212);
 	font-weight: 600;
+}
+
+.icon{
+    display: none;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+@media only screen and (max-width:788px){
+	nav ul{
+		display: none;
+	}
+
+	.icon{
+        display: flex;
+        cursor: pointer;
+    }
 }
