@@ -55,6 +55,34 @@ ul li a:hover, ul li a.active{
     margin-right: 12px;
 }
 
+.main{
+	display: flex;
+	justify-content: center;
+	margin-top: 155px;
+
+}
+
+.mainText h1{
+	font-size: 55px;
+	color: rgb(3, 218, 218);
+	 
+}
+
+.mainText h2{
+	font-size: 33px;
+
+}
+
+.mainText button{
+	width: 120px;
+	height: 34px;
+	background-color: rgb(3, 123, 123);
+	color: white;
+	font-size: 18px;
+	border: none;
+}
+
+
 @media only screen and (max-width:788px){
 	nav ul{
 		display: none;
