@@ -140,6 +140,12 @@ ul li a:hover, ul li a.active{
 	margin-inline: 20px;
 }
 
+.rCard:hover{
+	background-color: gray;
+	transition: 1s ease;
+	cursor: pointer;
+}
+
 .rCard img{
 	border-radius: 50%;
 	width: 42%;
@@ -153,6 +159,63 @@ ul li a:hover, ul li a.active{
 	border: none;
 	font-size: 18px;
 	margin-top: 20px;
+}
+
+.blog{
+	display: flex;
+	justify-content: center;
+}
+
+.blog .blogCard{
+	width: 300px;
+	text-align: center;
+	background-color: #fff;
+	margin-inline: 22px;
+	padding: 11px;
+	border-radius: 5px;
+}
+
+.blogCard img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+.blogCard a{
+	padding: 4px 20px;
+	background-color: rgb(3, 151, 151);
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.blogCard:hover{
+	background-color: gray;
+	transition: 1s ease;
+	cursor: pointer;
+}
+
+.connect{
+	text-align: center;
+}
+
+.connect input{
+	width: 380px;
+	padding: 8px;
+	font-size: 18px;
+	background-color: transparent;
+	border: 2px solid black;
+	margin-top: 11px;	
+}
+
+.connect button{
+	width: 130px;
+	height: 36px;
+	background-color: aqua;
+	color: white;
+	font-size: 20px;
+	border: none;
+	margin-top: 22px;
+	cursor: pointer;
 }
 
 @media only screen and (max-width:788px){
