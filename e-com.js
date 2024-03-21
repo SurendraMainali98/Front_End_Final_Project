@@ -11,3 +11,37 @@ icon.addEventListener("click", ()=>{
 
     }
 })
+
+// navbar
+let shops = doucument.getElementById("shops");
+let reviews = doucument.getElementById("reviews");
+let blogs = doucument.getElementById("blogs");
+let contacts = doucument.getElementById("contacts");
+ 
+shops.addEventsListner("click", ()=>{
+    shops.style.color="rgb(4, 219, 219)"
+    reviews.style.color="white"
+    blogs.style.color="white"
+    contacts.style.color="white"
+})
+
+reviews.addEventsListner("click", ()=>{
+    reviews.style.color="rgb(4, 219, 219)"
+    shops.style.color="white"
+    blogs.style.color="white"
+    contacts.style.color="white"
+})
+
+blogs.addEventsListner("click", ()=>{
+    blogs.style.color="rgb(4, 219, 219)"
+    reviews.style.color="white"
+    shops.style.color="white"
+    contacts.style.color="white"
+})
+
+contacts.addEventsListner("click", ()=>{
+    contacts.style.color="rgb(4, 219, 219)"
+    reviews.style.color="white"
+    blogs.style.color="white"
+    shops.style.color="white"
+})
