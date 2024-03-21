@@ -11,7 +11,7 @@ body{
 nav{
 	display: flex;
 	justify-content: space-between;
-	background-color: rgb(1, 1, 21);
+	background-color: #001B35;
 	color: white ;
 	position: fixed;
 	top: 0%;
@@ -209,7 +209,7 @@ ul li a:hover, ul li a.active{
 .connect button{
 	width: 130px;
 	height: 36px;
-	background-color: aqua;
+	background-color: #001B35;
 	color: white;
 	font-size: 20px;
 	border: none;
@@ -220,7 +220,7 @@ ul li a:hover, ul li a.active{
 .footer{
 	display: flex;
 	justify-content: space-around;
-	background-color: black;
+	background-color: #001B35;
 	color: white;
 	margin-top: 33px;
 	padding: 44px;
