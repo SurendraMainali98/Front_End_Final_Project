@@ -82,6 +82,78 @@ ul li a:hover, ul li a.active{
 	border: none;
 }
 
+.mainText button:hover{
+	border: 2px solid rgb(3, 163, 163);
+	background-color: transparent;
+	color: black;
+	cursor: pointer;
+
+}
+
+.cards{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.cards .crd{
+	margin-inline: 22px;
+	text-align: center;
+}
+.crd i{
+	color: rgb(248, 118, 3);
+	position: relative;
+	margin-top: -11px;
+}
+
+.crd h3{
+	margin-top: 3px;
+	position: relative;
+}
+
+.crd img{
+	width: 300px;
+	height: 240px;
+}
+
+.head{
+	padding: 55px;
+}
+
+.head span{
+	color: orangered;	
+}
+
+.reviews{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.reviews .rCard{
+	width: 260px;
+	height: 240px;
+	background-color: #fff;
+	text-align: center;
+	padding: 16px;
+	margin-inline: 20px;
+}
+
+.rCard img{
+	border-radius: 50%;
+	width: 42%;
+}
+
+.rCard button{
+	width: 90px;
+	height: 30px ;
+	background-color: rgb(3, 165, 165);
+	color: white;
+	border: none;
+	font-size: 18px;
+	margin-top: 20px;
+}
 
 @media only screen and (max-width:788px){
 	nav ul{
