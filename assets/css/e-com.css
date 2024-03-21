@@ -218,6 +218,14 @@ ul li a:hover, ul li a.active{
 	cursor: pointer;
 }
 
+.footer{
+	display: flex;
+	justify-content: space-around;
+	background-color: black;
+	color: white;
+	margin-top: 33px;
+}
+
 @media only screen and (max-width:788px){
 	nav ul{
 		display: none;
