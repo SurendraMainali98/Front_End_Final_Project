@@ -45,3 +45,21 @@ contacts.addEventsListner("click", ()=>{
     blogs.style.color="white"
     shops.style.color="white"
 })
+
+
+// card js
+ 
+let crd = document.querySelectorAll(".crd");
+let itemPage = document.querySelector(".itemPage");
+let container = document.querySelector(".container");
+console.log(crd);
+
+crd.forEach(function(curValue){
+    curValue.addEventListener("click", function(){
+       itemPage.style.display="flex";
+       container.style.display="none";
+       
+    })
+})
+
+

@@ -227,6 +227,39 @@ ul li a:hover, ul li a.active{
 	flex-wrap: wrap;
 }
 
+/* item page css */ 
+.itemPage{
+	display: none;
+	margin-top: 33px;
+	margin-left: 25px;
+}
+
+.itemPage img{
+	width: 400px;
+}
+
+.itemPage .itemText{
+	margin-inline: 24px;
+}
+
+.itemText h2{
+	color: rgb(4, 172, 4);
+}
+
+.itemPage input{
+	width: 30px;
+	padding: 4px;
+	font-size: 20px;
+}
+
+.itemText a{
+	padding: 4x 20px;
+	background-color: rgb(245, 79, 19);
+	color: white;
+	font-size: 18px;
+	text-decoration: none ;
+}
+
 @media only screen and (max-width:788px){
 	nav ul{
 		display: none;
