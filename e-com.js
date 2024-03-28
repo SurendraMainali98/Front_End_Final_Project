@@ -52,14 +52,21 @@ contacts.addEventsListner("click", ()=>{
 let crd = document.querySelectorAll(".crd");
 let itemPage = document.querySelector(".itemPage");
 let container = document.querySelector(".container");
+let itemImg = document.getElementById("itemImg");
+let buyBtn = document.getElementById("buyBtn")
+
 console.log(crd);
 
-crd.forEach(function(curValue){
-    curValue.addEventListener("click", function(){
-       itemPage.style.display="flex";
-       container.style.display="none";
-       
-    })
-})
+crd.forEach(function(curValue) {
+    curValue.addEventListener("click", function() {
+        itemPage.style.display = "flex";
+        container.style.display = "none";
 
+        let imgSrc = curValue.firstElementChild.src;
+        itemImg.src = imgSrc; 
 
+        buyBtn.addEventListener("click",function(){
+            
+        })
+    });
+});

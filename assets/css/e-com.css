@@ -260,6 +260,28 @@ ul li a:hover, ul li a.active{
 	text-decoration: none ;
 }
 
+
+/*buy page*/
+
+.buyPage{
+	width: 40%;
+	background-color: white;
+	padding: 22px;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	top: 11%;
+}
+
+.buyText input{
+	width: 95%;
+	padding: 7px;
+	border: 2px solid black;
+	margin-top: 8px;
+	
+}
+
+
 @media only screen and (max-width:788px){
 	nav ul{
 		display: none;
