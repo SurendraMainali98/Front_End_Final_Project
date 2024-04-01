@@ -1,0 +1,13 @@
+/* For animation */
+@keyframes slidein {
+    from {
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+.fashion_hub {
+      animation: slidein 1s ease forwards;
+}
