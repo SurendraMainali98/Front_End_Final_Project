@@ -1,0 +1,56 @@
+main {
+	padding: 20px;
+}
+
+/* Styles for the features section */
+#featuresSection {
+	height: auto;
+}
+
+#featuresSection .grid {
+	display: grid;
+	gap: 10px;
+}
+
+#featuresSection h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+	color: var(--heading-text-color);
+}
+/* Styles for the features grid */
+#featuresSection .features-grid {
+	width: 100%;
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	grid-template-rows: auto;
+}
+
+.features-grid {
+	counter-set: section 0;
+}
+
+.features-grid .feature-box h5::before {
+	counter-increment: section;
+	content: counter(section) ". ";
+}
+
+.features-grid .feature-box {
+	border-radius: 4px;
+	background-color: var(--feature-box-color);
+	padding: 20px;
+	cursor: pointer;
+}
+
+.feature-box:hover {
+	background-color: var(--feature-box-hover-color);
+}
+/* Styles for paragraphs */
+p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: left;
+	color: #474747;
+}
