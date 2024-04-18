@@ -1,0 +1,20 @@
+main {
+	padding: 20px;
+}
+
+/* Styles for the features section */
+#featuresSection {
+	height: auto;
+}
+
+#featuresSection .grid {
+	display: grid;
+	gap: 10px;
+}
+
+#featuresSection h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+	color: var(--heading-text-color);
+}
