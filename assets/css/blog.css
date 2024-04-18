@@ -92,3 +92,29 @@ details p {
 	gap: 20px;
 	padding: 20px;
 }
+
+#commitmentSection .flex:hover {
+	background: #f6f6f6;
+}
+
+#commitmentSection .flex.left {
+	border-bottom: 1px solid #f1f3f4;
+}
+
+#commitmentSection .flex.left p {
+	text-align: left;
+}
+
+#commitmentSection .flex.right a {
+	min-width: max-content;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	border-radius: 2px;
+	padding: 0px 20px;
+	background: rgb(12, 132, 229);
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 10px;
+	text-decoration: none;
+}
