@@ -1,274 +1,156 @@
+/*This term project is done by: Surendra 918640, Archita 908092, Tanishka 912053, Harmeet 911940 , Mehakdeep 912074, 18 April 2024*/
+/* Global styles */
 main {
-	padding: 20px;
+	padding: 20px; /* Add padding to the main content */
 }
 
 /* Styles for the features section */
 #featuresSection {
-	height: auto;
+	height: auto; /* Set height to auto */
 }
 
 #featuresSection .grid {
-	display: grid;
-	gap: 10px;
+	display: grid; /* Use grid layout */
+	gap: 10px; /* Set gap between grid items */
 }
 
 #featuresSection h4 {
-	text-transform: uppercase;
-	font-weight: 900;
-	letter-spacing: 1px;
-	color: var(--heading-text-color);
-}
-/* Styles for the features grid */
-#featuresSection .features-grid {
-	width: 100%;
-	display: grid;
-	gap: 40px;
-	grid-template-columns: repeat(1, minmax(0, 1fr));
-	grid-template-rows: auto;
-}
-
-.features-grid {
-	counter-set: section 0;
-}
-
-.features-grid .feature-box h5::before {
-	counter-increment: section;
-	content: counter(section) ". ";
-}
-
-.features-grid .feature-box {
-	border-radius: 4px;
-	background-color: var(--feature-box-color);
-	padding: 20px;
-	cursor: pointer;
-}
-
-.feature-box:hover {
-	background-color: var(--feature-box-hover-color);
-}
-/* Styles for paragraphs */
-p {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 25px;
-	text-align: left;
-	color: #474747;
-}
-
-details {
-	border-bottom: 1px solid #cccccc;
-}
-
-details:nth-last-child(1) {
-	border-bottom: 0px;
-}
-
-summary {
-	padding: 10px;
-	font-size: 10px;
-	font-weight: 600;
-	cursor: pointer;
-}
-
-summary::before {
-	content: counter(section) ". ";
-}
-
-details p {
-	padding: 10px;
-	background-color: #f1f3f4;
-}
-
-/* Styles for the commitment section */
-#commitmentSection {
-	width: 100%;
-	display: grid;
-}
-
-#commitmentSection .flex {
-	width: 50%;
-	display: grid;
-	justify-items: flex-start;
-	gap: 20px;
-	padding: 20px;
-}
-
-#commitmentSection .flex:hover {
-	background: #f6f6f6;
-}
-
-#commitmentSection .flex.left {
-	border-bottom: 1px solid #f1f3f4;
-}
-
-#commitmentSection .flex.left p {
-	text-align: left;
-}
-
-#commitmentSection .flex.right a {
-	min-width: max-content;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	border-radius: 2px;
-	padding: 0px 20px;
-	background: rgb(12, 132, 229);
-	color: #ffffff;
-	font-weight: 500;
-	font-size: 10px;
-	text-decoration: none;
-}
-
-main {
-	padding: 20px;
-}
-
-/* Styles for the features section */
-#featuresSection {
-	height: auto;
-}
-
-#featuresSection .grid {
-	display: grid;
-	gap: 10px;
-}
-
-#featuresSection h4 {
-	text-transform: uppercase;
-	font-weight: 900;
-	letter-spacing: 1px;
-	color: var(--heading-text-color);
+	text-transform: uppercase; /* Transform text to uppercase */
+	font-weight: 900; /* Set font weight */
+	letter-spacing: 1px; /* Set letter spacing */
+	color: var(--heading-text-color); /* Use custom variable for text color */
 }
 
 /* Styles for the features grid */
 #featuresSection .features-grid {
-	width: 100%;
-	display: grid;
-	gap: 40px;
-	grid-template-columns: repeat(1, minmax(0, 1fr));
-	grid-template-rows: auto;
+	width: 100%; /* Set width to 100% */
+	display: grid; /* Use grid layout */
+	gap: 40px; /* Set gap between grid items */
+	grid-template-columns: repeat(1, minmax(0, 1fr)); /* Define grid columns */
+	grid-template-rows: auto; /* Define grid rows */
 }
 
 .features-grid {
-	counter-set: section 0;
+	counter-set: section 0; /* Initialize counter for grid sections */
 }
 
 .features-grid .feature-box h5::before {
-	counter-increment: section;
-	content: counter(section) ". ";
+	counter-increment: section; /* Increment counter for each section */
+	content: counter(section) ". "; /* Display section number */
 }
 
 .features-grid .feature-box {
-	border-radius: 4px;
-	background-color: var(--feature-box-color);
-	padding: 20px;
-	cursor: pointer;
+	border-radius: 4px; /* Set border radius */
+	background-color: var(--feature-box-color); /* Use custom variable for background color */
+	padding: 20px; /* Set padding */
+	cursor: pointer; /* Set cursor to pointer */
 }
 
 .feature-box:hover {
-	background-color: var(--feature-box-hover-color);
+	background-color: var(--feature-box-hover-color); /* Change background color on hover */
 }
 
 /* Styles for paragraphs */
 p {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 25px;
-	text-align: left;
-	color: #474747;
+	font-weight: 500; /* Set font weight */
+	font-size: 16px; /* Set font size */
+	line-height: 25px; /* Set line height */
+	text-align: left; /* Align text to left */
+	color: #474747; /* Set text color */
 }
 
 /* Styles for the explore section */
 #exploreSection {
-	background: #f1f3f4;
+	background: #f1f3f4; /* Set background color */
 }
 
 /* Styles for the FAQs container */
 .faqs-container {
-	width: 100%;
-	margin-top: 40px;
-	border-radius: 4px;
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
+	width: 100%; /* Set width to 100% */
+	margin-top: 40px; /* Set top margin */
+	border-radius: 4px; /* Set border radius */
+	background-color: #f8f8f8; /* Set background color */
+	border: 1px solid #cccccc; /* Set border */
 }
 
+/* Styles for the details in the FAQs container */
 details {
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc; /* Add bottom border for separation */
 }
 
 details:nth-last-child(1) {
-	border-bottom: 0px;
+	border-bottom: 0px; /* Remove bottom border for the last details element */
 }
 
 summary {
-	padding: 10px;
-	font-size: 10px;
-	font-weight: 600;
-	cursor: pointer;
+	padding: 10px; /* Set padding for the summary */
+	font-size: 10px; /* Set font size */
+	font-weight: 600; /* Set font weight */
+	cursor: pointer; /* Set cursor to pointer */
 }
 
 summary::before {
-	content: counter(section) ". ";
+	content: counter(section) ". "; /* Add section number before summary */
 }
 
 details p {
-	padding: 10px;
-	background-color: #f1f3f4;
+	padding: 10px; /* Set padding for paragraphs inside details */
+	background-color: #f1f3f4; /* Set background color for paragraphs inside details */
 }
 
 /* Styles for the commitment section */
 #commitmentSection {
-	width: 100%;
-	display: grid;
+	width: 100%; /* Set width to 100% */
+	display: grid; /* Use grid layout */
 }
 
 #commitmentSection .flex {
-	width: 50%;
-	display: grid;
-	justify-items: flex-start;
-	gap: 20px;
-	padding: 20px;
+	width: 50%; /* Set width to 50% */
+	display: grid; /* Use grid layout */
+	justify-items: flex-start; /* Align items to the start */
+	gap: 20px; /* Set gap between grid items */
+	padding: 20px; /* Set padding */
 }
 
 #commitmentSection .flex:hover {
-	background: #f6f6f6;
+	background: #f6f6f6; /* Change background color on hover */
 }
 
 #commitmentSection .flex.left {
-	border-bottom: 1px solid #f1f3f4;
+	border-bottom: 1px solid #f1f3f4; /* Add bottom border */
 }
 
 #commitmentSection .flex.left p {
-	text-align: left;
+	text-align: left; /* Align text to left */
 }
 
 #commitmentSection .flex.right a {
-	min-width: max-content;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	border-radius: 2px;
-	padding: 0px 20px;
-	background: rgb(12, 132, 229);
-	color: #ffffff;
-	font-weight: 500;
-	font-size: 10px;
-	text-decoration: none;
+	min-width: max-content; /* Set minimum width to fit content */
+	height: 40px; /* Set height */
+	display: flex; /* Use flexbox */
+	align-items: center; /* Align items vertically */
+	border-radius: 2px; /* Set border radius */
+	padding: 0px 20px; /* Set padding */
+	background: rgb(12, 132, 229); /* Set background color */
+	color: #ffffff; /* Set text color */
+	font-weight: 500; /* Set font weight */
+	font-size: 10px; /* Set font size */
+	text-decoration: none; /* Remove text decoration */
 }
 
 #commitmentSection .flex.right a:hover {
-	background: rgb(8, 111, 196);
+	background: rgb(8, 111, 196); /* Change background color on hover */
 }
 
 /* Media queries for responsive design */
 @media (min-width: 900px) {
 	main {
-		padding: 60px 150px;
+		padding: 60px 150px; /* Adjust padding for larger screens */
 	}
 
 	@media (min-width: 700px) {
 		main {
-			padding: 60px;
+			padding: 60px; /* Adjust padding for medium screens */
 		}
 	}
 }
