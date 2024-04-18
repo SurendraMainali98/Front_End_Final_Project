@@ -46,3 +46,11 @@ main {
 .feature-box:hover {
 	background-color: var(--feature-box-hover-color);
 }
+/* Styles for paragraphs */
+p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: left;
+	color: #474747;
+}
