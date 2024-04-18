@@ -118,3 +118,157 @@ details p {
 	font-size: 10px;
 	text-decoration: none;
 }
+
+main {
+	padding: 20px;
+}
+
+/* Styles for the features section */
+#featuresSection {
+	height: auto;
+}
+
+#featuresSection .grid {
+	display: grid;
+	gap: 10px;
+}
+
+#featuresSection h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+	color: var(--heading-text-color);
+}
+
+/* Styles for the features grid */
+#featuresSection .features-grid {
+	width: 100%;
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	grid-template-rows: auto;
+}
+
+.features-grid {
+	counter-set: section 0;
+}
+
+.features-grid .feature-box h5::before {
+	counter-increment: section;
+	content: counter(section) ". ";
+}
+
+.features-grid .feature-box {
+	border-radius: 4px;
+	background-color: var(--feature-box-color);
+	padding: 20px;
+	cursor: pointer;
+}
+
+.feature-box:hover {
+	background-color: var(--feature-box-hover-color);
+}
+
+/* Styles for paragraphs */
+p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: left;
+	color: #474747;
+}
+
+/* Styles for the explore section */
+#exploreSection {
+	background: #f1f3f4;
+}
+
+/* Styles for the FAQs container */
+.faqs-container {
+	width: 100%;
+	margin-top: 40px;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+}
+
+details {
+	border-bottom: 1px solid #cccccc;
+}
+
+details:nth-last-child(1) {
+	border-bottom: 0px;
+}
+
+summary {
+	padding: 10px;
+	font-size: 10px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+summary::before {
+	content: counter(section) ". ";
+}
+
+details p {
+	padding: 10px;
+	background-color: #f1f3f4;
+}
+
+/* Styles for the commitment section */
+#commitmentSection {
+	width: 100%;
+	display: grid;
+}
+
+#commitmentSection .flex {
+	width: 50%;
+	display: grid;
+	justify-items: flex-start;
+	gap: 20px;
+	padding: 20px;
+}
+
+#commitmentSection .flex:hover {
+	background: #f6f6f6;
+}
+
+#commitmentSection .flex.left {
+	border-bottom: 1px solid #f1f3f4;
+}
+
+#commitmentSection .flex.left p {
+	text-align: left;
+}
+
+#commitmentSection .flex.right a {
+	min-width: max-content;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	border-radius: 2px;
+	padding: 0px 20px;
+	background: rgb(12, 132, 229);
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#commitmentSection .flex.right a:hover {
+	background: rgb(8, 111, 196);
+}
+
+/* Media queries for responsive design */
+@media (min-width: 900px) {
+	main {
+		padding: 60px 150px;
+	}
+
+	@media (min-width: 700px) {
+		main {
+			padding: 60px;
+		}
+	}
+}
