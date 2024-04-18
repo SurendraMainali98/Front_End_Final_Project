@@ -1,11 +1,136 @@
-@keyframes slidein {
-    from{
-        transform: translate(-100%);
-    }
-    to{
-        transform: translate(0);
-    }
+/*This term project is done by: Surendra 918640, Archita 908092, Jaspreet 911924, Tanishka 912053, Harmeet 911940 , Mehakdeep 912074, 08 Dec 2023*/
+/* Overall container styling */
+#container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
 }
-.mainText{
-    animation: slidein 1s ease forwards;
+
+/* Styling for Google Map  */
+.google-map-container {
+    position: relative;
+    height: auto;
+}
+
+/* Styling for Google Map iframe */
+.google-map-container .google-map {
+    position: relative;
+    min-height: 50vh;
+    max-height: 70vh;
+}
+
+/* Styling for Google Map iframe */
+.google-map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px #7e7e7e;
+    border-radius: 4px;
+}
+
+/* Styling for contact form container */
+.contact-form {
+    position: relative;
+}
+
+/* Styling for child elements of contact form */
+.contact-form > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+/* Styling for form groups */
+.form-group {
+    min-width: max-content;
+    display: grid;
+    gap: 10px;
+    justify-items: flex-start;
+}
+
+/* Styling for form group labels */
+.form-group label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+
+/* Styling for form inputs and textareas */
+.form-input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #dfdfdf;
+    background: #fafafa;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #222222;
+}
+
+/* Styling for form input hover and focus states */
+.form-input:is(:hover, :focus) {
+    border: 1px solid #cecece;
+    background: #f1f3f4;
+}
+
+/* Styling for form input placeholder text */
+.form-input::placeholder {
+    color: #717171;
+}
+
+/* Styling for gender labels within form group */
+.form-group .genders {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Styling for gender labels */
+.genders label {
+    color: #222222;
+    cursor: pointer;
+}
+
+/* Styling for submit button within contact form */
+.contact-form .submit-btn {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #cccccc;
+    background: #ededed;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #222222;
+}
+
+/* Styling for submit button hover state */
+.contact-form .submit-btn:hover {
+    background: #e7e7e7;
+    border: 1px solid #bebebe;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 900px) {
+    #container, .footer {
+        padding: 60px 150px;
+    }
+
+    @media (min-width: 700px) {
+        #container, .footer {
+            padding: 60px;
+        }
+
+        @media (max-width: 500px) {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
 }

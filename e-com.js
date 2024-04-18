@@ -13,7 +13,6 @@ icon.addEventListener("click", ()=>{
     }
 })
 
-
 // navbar
 
 let shops = document.getElementById("shops");
@@ -26,8 +25,6 @@ shops.addEventListener("click", ()=>{
     reviews.style.color="white";
     blogs.style.color="white";
     contacts.style.color="white";
-
-
 })
 
 
