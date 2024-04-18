@@ -54,3 +54,41 @@ p {
 	text-align: left;
 	color: #474747;
 }
+
+details {
+	border-bottom: 1px solid #cccccc;
+}
+
+details:nth-last-child(1) {
+	border-bottom: 0px;
+}
+
+summary {
+	padding: 10px;
+	font-size: 10px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+summary::before {
+	content: counter(section) ". ";
+}
+
+details p {
+	padding: 10px;
+	background-color: #f1f3f4;
+}
+
+/* Styles for the commitment section */
+#commitmentSection {
+	width: 100%;
+	display: grid;
+}
+
+#commitmentSection .flex {
+	width: 50%;
+	display: grid;
+	justify-items: flex-start;
+	gap: 20px;
+	padding: 20px;
+}
