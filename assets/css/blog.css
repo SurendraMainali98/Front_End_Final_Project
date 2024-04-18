@@ -18,3 +18,31 @@ main {
 	letter-spacing: 1px;
 	color: var(--heading-text-color);
 }
+/* Styles for the features grid */
+#featuresSection .features-grid {
+	width: 100%;
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	grid-template-rows: auto;
+}
+
+.features-grid {
+	counter-set: section 0;
+}
+
+.features-grid .feature-box h5::before {
+	counter-increment: section;
+	content: counter(section) ". ";
+}
+
+.features-grid .feature-box {
+	border-radius: 4px;
+	background-color: var(--feature-box-color);
+	padding: 20px;
+	cursor: pointer;
+}
+
+.feature-box:hover {
+	background-color: var(--feature-box-hover-color);
+}
