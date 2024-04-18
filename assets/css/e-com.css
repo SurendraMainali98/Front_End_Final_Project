@@ -1,389 +1,416 @@
+
+/* General styling */
+
 * {
-    transition: .2s linear;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif; 
+    transition: 0.2s linear; /* Transition effect for smooth property changes */
+	box-sizing: border-box; /* Box model to include padding and border in element's total width and height */
+	font-family: Arial, sans-serif; /* Default font family for the document */
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth; /* Smooth scrolling behavior for the entire document */
 }
 
-body{
-    height: 100vh;
-    margin: 0; 
-    padding: 0;
-    background-color: rgb(212, 211, 211);
-}
-nav{
-    width: 100%;
-    top: 0%;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(3, 3, 55);
-    color: white;
-    position: fixed;
-}
-.logo{
-    margin-left: 13px;
-    font-size: 19px;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-    margin-right: 13px;
-}
-ul li{
-    list-style: none;
-}
-ul li a{
-    text-decoration: none;
-    margin-inline: 20px;
-    font-size: 20px;
-    color: white;
-}
-ul li a:hover, ul li a.active{
-    color: rgb(4, 219, 219);
-    font-weight: 600;
-}
-.icon{
-    display: none;
-    align-items: center;
-    font-size: 30px;
-    margin-right: 12px;
-}
-.main{
-    display: flex;
-    justify-content: center;
-    margin-top: 155px;
-
-}
-.mainText h1{
-    font-size: 55px;
-    color: orangered;
-}
-.mainText h2{
-    color:  rgb(3, 3, 55);
-    font-size: 33px;
-}
-.mainText p{
-    font-size: 16px;
-    color:  rgb(3, 3, 55);
+body {
+    height: 100vh; /* Full height of the viewport */
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+	background-color: #fff; /* Default background color for the body */
 }
 
-.mainText button{
-    width: 120px;
-    height: 34px;
-    background-color: orangered;
-    color: white;
-    font-size: 18px;
-    border: none;
+/* Navigation styling */
+nav {
+	width: 100%;
+	top: 0%;
+	z-index: 999; /* Ensure navigation stays on top of other elements */
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	padding: 12px 3%;
+	box-shadow: 0px 0px 10px rgba(0 0 0 /10%); /* Box shadow for a subtle effect */
+	color: #2c2c2c;
+	position: fixed; /* Fixed positioning to keep navigation fixed at the top */
 }
-.mainText button:hover{
-    border: 2px solid  rgb(3, 3, 55);
-    background-color: transparent;
-    color: black;
-    cursor: pointer;
+.logo {
+	margin-left: 0;
+	font-size: 19px; /* Font size for the logo */
 }
-.cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.logo img {
+	height: 50px;
+	width: auto;
 }
-.cards .crd{
-    margin-inline: 22px;
-    text-align: center;
+nav ul {
+	display: flex;
+	align-items: center;
+	margin-right: 0;
 }
-.crd i{
-    color: rgb(248, 118, 3);
-     position: relative;
-     top: -11px;
+ul li {
+	list-style: none; /* Remove default list styling */
 }
-.crd h3{
-    margin-top: 3px;
+ul li a {
+	text-decoration: none; /* Remove underline from anchor links */
+	margin-inline: 20px; /* Spacing between navigation links */
+	font-size: 20px; /* Font size for navigation links */
+	color: #2c2c2c; /* Text color for navigation links */
 }
-.crd img{
-    width: 300px;
-    height: 340px;
+ul li a:hover,
+ul li a.active {
+	color: orangered; /* Text color on hover or when active */
+	font-weight: 600; /* Font weight for emphasis */
+}
+.icon {
+	display: none; /* Hide by default */
+	align-items: center;
+	font-size: 30px;
+	margin-right: 12px; /* Margin for the icon */
 }
 
-.head{
-    padding: 65px;
-    text-align: center;
+/* Main section styling */
+.main {
+	display: flex;
+	justify-content: center;
+	margin-top: 155px; /* Top margin for main section */
 }
-.head span{
-    color: orangered;
+
+.mainText h1 {
+	font-size: 55px; /* Font size for main heading */
+	color: orangered; /* Text color for main heading */
 }
-.reviews{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    gap: 20px;
+
+.mainText h2 {
+	color: rgb(3, 3, 55); /* Text color for secondary heading */
+	font-size: 33px; /* Font size for secondary heading */
 }
-.reviews .rCard{
-    width: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+
+.mainText p {
+	font-size: 16px; /* Font size for paragraph */
+	color: rgb(3, 3, 55); /* Text color for paragraph */
+}
+
+.mainText button {
+    width: 120px; /* Button width */
+	height: 34px; /* Button height */
+	background-color: orangered; /* Button background color */
+	color: white; /* Button text color */
+	font-size: 18px; /* Button font size */
+	border: none; /* Remove button border */
+}
+.mainText button:hover {
+	border: 2px solid rgb(3, 3, 55); /* Border on hover */
+	background-color: transparent; /* Transparent background on hover */
+	color: black; /* Text color on hover */
+	cursor: pointer; /* Cursor style on hover */
+}
+
+/* Cards section styling */
+.cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* Wrap cards to next line */
+	margin-top: 20px; /* Top margin for cards */
+}
+.cards .crd {
+	margin-inline: 22px; /* Spacing between cards */
+	text-align: center; /* Center-align card content */
+}
+.crd i {
+	color: orangered; /* Icon color */
+	position: relative;
+	top: -11px; /* Position adjustment for icon */
+}
+.crd h3 {
+	margin-top: 3px; /* Top margin for card heading */
+}
+.crd img {
+    width: 300px; /* Image width */
+	height: 340px; /* Image height */
+}
+
+/* Header section styling */
+.head {
+	padding: 65px; /* Padding for header section */
+	text-align: center; /* Center-align header content */
+}
+.head span {
+	color: orangered; /* Text color for span element */
+}
+
+/* Reviews section styling */
+.reviews {
+	display: flex;
+	flex-wrap: wrap; /* Wrap reviews to next line */
+	align-items: stretch; /* Stretch items to fill container */
+	justify-content: center; /* Center-align reviews */
+	gap: 20px; /* Spacing between reviews */
+}
+
+.reviews .rCard {
+	width: 260px; /* Card width */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px; /* Spacing between elements in card */
 }
 
 .reviews .rCard .card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background-color: #fff; /* Background color for card content */
+	text-align: center;  /* Center-align text */
+	padding: 16px; /* Padding for card content */
+
+	> p {
+		color: black !important; /* Text color for paragraph */
+	}
+
+	> img {
+        width: 50%; /* Image width */
+		aspect-ratio: 1/1; /* Maintain aspect ratio */
+		object-fit: cover; /* Fit image inside container */
+		border-radius: 999px; /* Border radius for rounded image */
+	}
+}
+
+.rCard button {
+	width: 90px; /* Button width */
+	height: 30px; /* Button height */
+	background-color: rgb(3, 165, 165); /* Button background color */
+	color: white; /* Button text color */
+	border: none; /* Remove button border */
+	font-size: 18px; /* Button font size */
+	margin-top: 20px; /* Top margin for button */
+}
+
+/* Blog section styling */
+.blog {
+	display: flex;
+	flex-wrap: wrap; /* Wrap blog cards to next line */
+	justify-content: center; /* Center-align blog cards */
+}
+.blog .blogCard {
+	width: 300px; /* Blog card width */
+	text-align: center; /* Center-align blog card content */
+	background-color: #fff; /* Background color for blog card */
+	margin-inline: 22px; /* Spacing between blog cards */
+	padding: 16px; /* Padding for blog card */
+	border-radius: 5px; /* Border radius for rounded corners */
+
+	> p {
+		color: black; /* Text color for paragraph */
+	}
+}
+.blogCard img {
+	width: 100%; /* Image width */
+	border-radius: 5px; /* Border radius for rounded corners */
+}
+
+.blogCard a {
+	padding: 4px 20px; /* Padding for anchor link */
+	background-color: rgb(3, 151, 151); /* Background color for anchor link */
+	color: white; /* Text color for anchor link */
+	font-size: 18px; /* Font size for anchor link */
+	text-decoration: none; /* Remove underline from anchor link */
+}
+.blogCard:hover {
+	transition: 1s ease; /* Transition effect on hover */
+	background-color: gray; /* Background color change on hover */
+	cursor: pointer; /* Cursor style on hover */
+}
+
+/* footer section  styling*/
+.footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: #fff;
-    text-align: center;
-    padding: 16px;
-
-    > p {
-        color: black !important;
-    }
-
-    > img {
-        width: 50%;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        border-radius: 999px;
-    }
+	flex-wrap: wrap; /* Wrap footer content to next line */
+	justify-content: space-around; /* Distribute items evenly */
+	background-color: #f3f4f6; /* Background color for footer */
+	padding: 20px; /* Padding for footer */
+	margin-top: 33px; /* Top margin for footer */
+	color: black; /* Text color for footer content */
 }
 
-.rCard button{
-    width: 90px;
-    height: 30px;
-    background-color: rgb(3, 165, 165);
-    color: white;
-    border: none;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.blog{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.blog .blogCard{
-    width: 300px;
-    text-align: center;
-    background-color: #fff;
-    margin-inline: 22px;
-    padding: 16px;
-    border-radius: 5px;
-
-    > p {
-         color: black;
-    }
-    
-}
-.blogCard img{
-    width: 100%;
-    border-radius: 5px;
-}
-
-.blogCard a{
-    padding: 4px 20px;
-    background-color: rgb(3, 151, 151);
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-}
-.blogCard:hover{
-    transition: 1s ease;
-    background-color: gray;
-    cursor: pointer;
-}
-
-/* footer section */
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(3, 3, 55);
-    padding: 20px;
-    margin-top: 33px;
-    color: white;
-}
-
-.footer .text a, p
-{
-    color: #FFF;
-    text-decoration: none;
-    font-size: 14px;
+.footer a,
+p {
+	color: black; /* Text color for anchor links and paragraphs */
+	text-decoration: none; /* Remove underline from anchor links */
+	font-size: 16px; /* Font size for footer content */
 }
 
 /* item Page css */
 
-.itemPage{
-    display: none;
-    padding: 40px;
-    flex-direction: row;
+.itemPage {
+	display: none; /* Hide by default */
+	padding: 40px; /* Padding for item page */
+	flex-direction: row; /* Arrange item page content in a row */
 }
-.itemPage img{
-    width: 300px;
-    border: 1px solid lightgreen;
-    border-radius: 4px;
-    object-fit: cover;
+.itemPage img {
+	width: 300px; /* Image width */
+	border: 1px solid lightgreen; /* Border style */
+	border-radius: 4px; /* Border radius for rounded corners */
+	object-fit: cover; /* Fit image inside container */
 }
-.itemPage .itemText{
-    margin-inline: 24px;
+.itemPage .itemText {
+	margin-inline: 24px; /* Spacing between item image and text */
 }
-.itemText h2{
-    color: rgb(1, 167, 1);
+.itemText h2 {
+	color: rgb(1, 167, 1); /* Text color for heading */
 }
-.itemText p{
-    color: black;
+.itemText p {
+	color: black; /* Text color for paragraph */
 }
-.itemPage input{
-    width: 30px;
-    padding: 4px;
-    font-size: 20px;
+.itemPage input {
+	width: 30px; /* Input width */
+	padding: 4px; /* Padding for input */
+	font-size: 20px; /* Font size for input */
 }
-.itemText a{
-    padding: 4px 20px ;
-    background-color: orangered;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
+.itemText a {
+	padding: 4px 20px; /* Padding for anchor link */
+	background-color: orangered; /* Background color for anchor link */
+	color: white; /* Text color for anchor link */
+	font-size: 18px; /* Font size for anchor link */
+	text-decoration: none; /* Remove underline from anchor link */
 }
 
-/* buyPage */
+/* buyPage styling*/
 
-.buyPage{
-    display: none;
-    width: 40%;
-    background-color: #fff;
-    padding: 22px;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 40%);
-    top: -15%;
-    border-radius: 4px;
+.buyPage {
+	display: none; /* Hide by default */
+	width: 40%; /* Width of buy page */
+	background-color: #fff; /* Background color for buy page */
+	padding: 22px; /* Padding for buy page */
+	position: absolute; /* Absolute positioning */
+	left: 50%; /* Position from left */
+	right: 50%; /* Position from right */
+	transform: translate(-50%, 40%); /* Center-align horizontally */
+	top: -15%; /* Position from top */
+	border-radius: 4px; /* Border radius for rounded corners */
+}
 
+.buyText input {
+    width: 95%; /* Input width */
+	padding: 7px; /* Padding for input */
+	border: 2px solid black; /* Border style */
+	margin-top: 8px; /* Top margin for input */
+	font-size: 18px; /* Font size for input */
 }
- 
-.buyText input{
-    width: 95%;
-    padding: 7px;
-    border: 2px solid black;
-    margin-top: 8px;
-    font-size: 18px;
-    
+.buyPage .cross {
+    position: absolute; /* Absolute positioning */
+	top: 0%; /* Position from top */
+	left: 0%; /* Position from left */
+	background-color: rgb(171, 170, 170); /* Background color for close button */
+	padding: 8px; /* Padding for close button */
+	border-radius: 4px; /* Border radius for rounded corners */
+	cursor: pointer; /* Cursor style */
 }
-.buyPage .cross{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: rgb(171, 170, 170);
-    padding: 8px;
-    border-radius: 4px;
-    cursor: pointer;
+.buyText button {
+    width: 120px; /* Button width */
+	height: 34px; /* Button height */
+	background-color: rgb(1, 125, 125); /* Background color for button */
+	color: white; /* Text color for button */
+	font-size: 20px; /* Font size for button */
+	border: none; /* Remove button border */
+	margin-top: 22px; /* Top margin for button */
 }
-.buyText button{
-    width: 120px;
-    height: 34px;
-    background-color: rgb(1, 125, 125);
-    color: white;
-    font-size: 20px;
-    border: none;
-    margin-top: 22px;
-}
-.buyText select{
-    padding: 4px;
-    font-size: 18px;
+.buyText select {
+	padding: 4px; /* Padding for select */
+	font-size: 18px; /* Font size for select */
 }
 
 /*media queries for reponsive design*/
 
-@media only screen and (max-width:750px){
-    .itemPage img{
-        width: 200px;
-    }
+@media only screen and (max-width: 750px) {
+    /* Styles for screens up to 750px in width */
+	.itemPage img {
+		width: 200px; /* Adjust image width */
+	}
 
-    nav ul{
-        display: none;
-    }
-    .icon{
-        display: flex;
-        cursor: pointer;
-    }
-    .showData{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 58px;
-        background-color: rgb(120, 120, 120);
-        width: 100%;
-        height: 240px;
-        gap: 20px;
-        padding: 0%;
-        text-align: center;
+	nav ul {
+		display: none; /* Hide navigation links */
+	}
+	.icon {
+		display: flex; /* Show icon */
+		cursor: pointer; /* Cursor style */
+	}
+	.showData {
+		display: flex; /* Show data */
+		flex-direction: column; /* Arrange data in a column */
+		justify-content: center; /* Center-align content */
+		align-items: center; /* Center-align items */
+		position: absolute; /* Absolute positioning */
+		top: 58px; /* Position from top */
+		background-color: #f8f8ff; /* Background color for dropdown */
+		width: 100%; /* Full width */
+		gap: 20px; /* Spacing between items */
+		padding: 20px 0px; /* Padding for dropdown */
+		text-align: center; /* Center-align text */
+	}
+	.mainText h1 {
+		font-size: 40px;
+	}
+	.mainText h2 {
+		font-size: 24px;
+	}
+	.crd img {
+		width: 71%;
+	}
+	.connect input {
+		width: 65%;
+	}
+    /* Nested media query */
+	@media (max-width: 600px) {
+        /* Styles for screens up to 600px in width */
+		.itemPage {
+			flex-direction: column; /* Arrange item page content in a column */
+			align-items: flex-start; /* Align items to the start */
+			gap: 25px; /* Spacing between items */
+		}
 
-    }
-    .mainText h1{
-        font-size: 40px;
-    }
-    .mainText h2{
-        font-size: 24px;
-    }
-    .crd img{
-        width: 71%;
-    }
-    .connect input{
-        width: 65%;
-    }
-
-    @media (max-width: 600px) {
-        .itemPage {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 25px;
-        }        
-
-        .itemPage img{
-            width: 100%;
-            aspect-ratio: 3/2;
-        }
-    }
+		.itemPage img {
+			width: 100%; /* Full width */
+			aspect-ratio: 3/2; /* Maintain aspect ratio */
+		}
+	}
 }
 
-@media only screen and (max-width:400px){
-    .main img{
-        width: 95%;
-    }
-}
- 
-@media only screen and (max-width:1000px){
-    .main{
-        display: block;
-        text-align: center;
-    }
-    .main img{
-        margin-top: 20px;
-    }
-
+@media only screen and (max-width: 400px) {
+    /* Styles for screens up to 400px in width */
+	.main img {
+		width: 95%; /* Adjust image width */
+	}
 }
 
-@media only screen and (max-width:400px){
-    .itemPage img{
-        width: 95%;
-    }
+@media only screen and (max-width: 1000px) {
+    /* Styles for screens up to 1000px in width */
+	.main {
+		display: block; /* Display as block */
+		text-align: center; /* Center-align content */
+	}
+	.main img {
+		margin-top: 20px; /* Top margin for image */
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    /* Styles for screens up to 400px in width */
+	.itemPage img {
+		width: 95%; /* Adjust image width */
+	}
 }
 
 @keyframes slidein {
-    from{
-        transform: translate(-100%);
-    }
-    to{
-        transform: translate(0);
-    }
+    /* Keyframe animation for sliding in */
+	from {
+		transform: translate(-100%); /* Start position */
+	}
+	to {
+		transform: translate(0); /* End position */
+	}
 }
-.mainText{
-    animation: slidein 1s ease forwards;
+/* Apply slide-in animation to mainText */
+.mainText {
+	animation: slidein 1s ease forwards; /* Animation properties */
 }
+
+
+
