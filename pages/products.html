@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/e-com.css" />
-    <link rel="stylesheet" href="../assets/css/products.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
+
     <script
       src="https://kit.fontawesome.com/f30fac2c61.js"
       crossorigin="anonymous"
@@ -19,15 +15,15 @@
     <div class="container">
       <nav>
         <div class="logo">
-          <h1>Shopping Mart</h1>
+          <img src="../assets/images/logo.PNG" />
         </div>
         <ul>
           <li><a href="../index.html" class="active">Home</a></li>
           <li><a href="../index.html#shop" id="shops">Shop</a></li>
-          <li><a href="./pages/products.html" id="products">Products</a></li>
+          <li><a href="products.html" id="products">Products</a></li>
           <li><a href="../index.html#review" id="reviews">Review</a></li>
           <li><a href="../index.html#blog" id="blogs">Blog</a></li>
-          <li><a href="./pages/contact-us.html" id="contacts">Contact</a></li>
+          <li><a href="../pages/contact-us.html" id="contacts">Contact</a></li>
         </ul>
         <div class="icon">
           <i id="bar" class="fa-solid fa-bars"></i>
@@ -153,7 +149,10 @@
       <!-- footer -->
       <div class="footer">
         <div class="text">
-          <h2>Shopping Mart</h2>
+          <img
+            src="..\assets\images\footerlogo.png"
+            style="height: 50px; width: auto"
+          />
           <p>
             The one-stop shopping brand, providing every piece of clothing at
             the same place. <br />
@@ -193,6 +192,34 @@
           <p>Special credits</p>
         </div>
       </div>
+    </div>
+
+    <!-- item Page -->
+    <div class="itemPage">
+      <img id="itemImg" src="" alt="" />
+      <div class="itemText">
+        <h2>Trending</h2>
+        <h3>$221 Only</h3>
+        <p>Quantity</p>
+        <input type="number" value="1" style="width: 60px" />
+        <h2>Available Offer's</h2>
+        <p>
+          Special PriceGet extra 13% off (price inclusive of cashback/coupon)
+        </p>
+        <p>Bank Offer $15 off on 1st Transaction</p>
+        <p>Bank OfferFlat $200 off on Scotia Bank Credit/Debit</p>
+        <p>Bank OfferFlat $200 off on RBC Bank Credit/Debit</p>
+        <p>The item is absolutely amazing.</p>
+        <a href="">Back</a>
+        <a id="buyBtn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="buyPage">
+      <div class="cross">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="buyText"></div>
     </div>
 
     <script src="../e-com.js"></script>
