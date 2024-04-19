@@ -18,7 +18,7 @@ main {
 	text-transform: uppercase; /* Transform text to uppercase */
 	font-weight: 900; /* Set font weight */
 	letter-spacing: 1px; /* Set letter spacing */
-	color: var(--heading-text-color); /* Use custom variable for text color */
+	color: black; /* Use custom variable for text color */
 }
 
 /* Styles for the features grid */
