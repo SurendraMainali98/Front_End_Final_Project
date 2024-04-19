@@ -1,70 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../assets/css/e-com.css" />
+    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="../assets/images/logo.PNG" />
+        </div>
+        <ul>
+          <li><a href="../index.html" class="active">Home</a></li>
+          <li><a href="../index.html#shop" id="shops">Shop</a></li>
+          <li><a href="products.html" id="products">Products</a></li>
+          <li><a href="../index.html#review" id="reviews">Review</a></li>
+          <li><a href="blog.html" id="blogs">Blog</a></li>
+          <li><a href="../pages/contact-us.html" id="contacts">Contact</a></li>
+        </ul>
+        <div class="icon">
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Blog</title>
-	<link rel="stylesheet" href="../assets/css/e-com.css" />
-	<link rel="stylesheet" href="../assets/css/blog.css" />
-	<script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
-</head>
+      <main style="display: flex; flex-direction: column; gap: 20px">
+        <div class="main">
+          <div class="">
+            <h2>Fashion Hub</h2>
+            <p>
+              <span>&OpenCurlyDoubleQuote;</span>The main objective of Shopping
+              Mart is to provide the right products for our customers. We go
+              beyond offering products. Instead, we aim to empower our customers
+              and foster confidence among them so as to fulfill their needs and
+              promote development of strong relationships within communities and
+              attainment of customer satisfaction.
+              <span>&CloseCurlyDoubleQuote;</span>
+            </p>
+          </div>
+          <img src="..\assets\images\bg1.png" alt="" />
+        </div>
 
-<body>
-	<div class="container">
-		<nav>
-			<div class="logo">
-				<img src="../assets/images/logo.PNG" />
-			</div>
-			<ul>
-				<li><a href="../index.html" class="active">Home</a></li>
-				<li><a href="../index.html#shop" id="shops">Shop</a></li>
-				<li><a href="products.html" id="products">Products</a></li>
-				<li><a href="../index.html#review" id="reviews">Review</a></li>
-				<li><a href="blog.html" id="blogs">Blog</a></li>
-				<li><a href="../pages/contact-us.html" id="contacts">Contact</a></li>
-			</ul>
-			<div class="icon">
-				<i id="bar" class="fa-solid fa-bars"></i>
-			</div>
-		</nav>
-		<main style="display: flex; flex-direction: column; gap: 20px">
-			<div class="main">
-				<div>
-					<h2>Fashion Hub</h2>
-					<p>
-						<span>&OpenCurlyDoubleQuote;</span>The main objective of Shopping Mart is to provide the
-						right products for our customers. We go beyond offering products. Instead, we aim to empower
-						our customers and foster confidence among them so as to fulfill their needs and promote
-						development of strong relationships within communities and attainment of customer
-						satisfaction.
-						<span>&CloseCurlyDoubleQuote;</span>
-					</p>
-				</div>
-				<img src="..\assets\images\bg1.png" alt="" />
-				<section id="container">
-					<section id="featuresSection" class="container">
-						<!-- Features Section -->
-						<div class="grid">
-							<h4>Our Offerings</h4>
+        <section id="container">
+          <section id="featuresSection" class="container">
+            <!-- Features Section -->
+            <div class="grid">
+              <h4>Our Offerings</h4>
 
-							<div class="features-grid">
-								<div class="feature-box">
-									<h5>Cutting-edge Technology</h5>
-									<p>
-										Our systems provide unparalleled shopping capabilities, enabling real-time
-										monitoring and intelligence gathering across various product categories and
-										preferences.
-									</p>
-								</div>
-								<div class="feature-box">
-									<h5>Consultancy Services</h5>
-									<p>
-										Our team of experts offers strategic consultancy services, assisting customers
-										in optimizing their shopping experience, enhancing satisfaction, and exploring
-										new products effectively.
-									</p>
-								</div>
-							</div>
-						</div>
-					</section>
+              <div class="features-grid">
+                <div class="feature-box">
+                  <h5>Cutting-edge Technology</h5>
+                  <p>
+                    Our systems provide unparalleled shopping capabilities,
+                    enabling real-time monitoring and intelligence gathering
+                    across various product categories and preferences.
+                  </p>
+                </div>
+
+                <div class="feature-box">
+                  <h5>Consultancy Services</h5>
+                  <p>
+                    Our team of experts offers strategic consultancy services,
+                    assisting customers in optimizing their shopping experience,
+                    enhancing satisfaction, and exploring new products
+                    effectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="exploreSection" class="container">
+            <div style="display: grid; justify-items: flex-start; gap: 60px">
+              <div style="padding: 20px">
+                <h4>Why Explore Shopping Mart's Website?</h4>
+                <br />
+                <p>
+                  At Shopping Mart, we understand that your time is valuable.
+                  That's why we've crafted our website to be more than just a
+                  platform—it's a gateway to innovative solutions and
+                  transformative advancements in online shopping technology.
+                  Here's why you should take a moment to explore what we offer -
+                </p>
+              </div>
+              <div class="features-grid">
+                <div class="feature-box">
+                  <h5>Solving Customer Needs</h5>
+                  <p>
+                    In an era of evolving preferences and complex market
+                    landscapes, Shopping Mart exists to solve the critical needs
+                    faced by customers globally. Whether it's finding the latest
+                    trends, enhancing shopping efficiency, or discovering new
+                    products, we provide solutions designed to address these
+                    pressing concerns head-on.
+                  </p>
+                </div>
+                <div class="feature-box">
+                  <h5>Our Solutions, Your Satisfaction</h5>
+                  <p>
+                    We are not just another ecommerce website. Shopping Mart is
+                    your strategic partner in fulfilling your shopping needs.
+                    Our suite of cutting-edge technologies, product variety, and
+                    tailored solutions is the answer to your shopping
+                    requirements. From fashion to electronics, we provide the
+                    tools and expertise necessary to navigate today's intricate
+                    shopping environments.
+                  </p>
+                </div>
+                <!-- Add more features or sections as needed -->
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="commitmentSection">
+          <!-- Commitment Section -->
+          <div class="flex left">
+            <h4>Our Commitment</h4>
+            <p>
+              At Shopping Mart, our commitment goes beyond offering products and
+              services. We are committed to building lasting relationships,
+              fostering trust, and continuously evolving to meet the dynamic
+              needs of our customers and the ever-changing global market
+              landscape.
+            </p>
+          </div>
+
+          <div class="flex right">
+            <h4>Get in Touch</h4>
+            <p>
+              Join us in shaping the future of online shopping. Contact Shopping
+              Mart today to explore how our innovative solutions and expertise
+              can elevate your shopping experience.
+            </p>
+
+            <a href="./contact-us.html#spacer">
+              <span>Get Started to Join Us</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="text">
+          <img
+            src="..\assets\images\footerlogo.png"
+            style="height: 50px; width: auto"
+          />
+          <p>
+            The one-stop shopping brand, providing every piece of clothing at
+            the same place. <br />
+            A retailer selling classy and trendy designs, extending to different
+            parts of the world. <br />
+            The good are shipped rapidly and safely. Explore the latest fashion
+            with Shopping Mart.
+          </p>
+        </div>
+        <div class="text">
+          <h2>Explore</h2>
+          <p>All</p>
+          <p>Rated</p>
+          <p>Scores</p>
+          <p>Scores</p>
+        </div>
+        <div class="text">
+          <h2>Connect</h2>
+          <a href="https://instagram.com">
+            <p><i class="fab fa-instagram"></i> &nbsp; Instagram</p>
+          </a>
+          <a href="https://x.com">
+            <p><i class="fab fa-twitter"></i> &nbsp; Twitter</p>
+          </a>
+          <a href="https://facebook.com">
+            <p><i class="fab fa-facebook"></i> &nbsp; Facebook</p>
+          </a>
+          <a href="tel: +647 001 0000">
+            <p><i class="fas fa-phone"></i> &nbsp; +647 001 0000</p>
+          </a>
+        </div>
+        <div class="text">
+          <h2>Nity Grity</h2>
+          <p>Term & Condition</p>
+          <p>Privacy Policy</p>
+          <p>FAQs</p>
+          <p>Special credits</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../e-com.js"></script>
+  </body>
+</html>
