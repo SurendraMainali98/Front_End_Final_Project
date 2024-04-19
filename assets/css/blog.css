@@ -18,7 +18,7 @@ main {
 	text-transform: uppercase; /* Transform text to uppercase */
 	font-weight: 900; /* Set font weight */
 	letter-spacing: 1px; /* Set letter spacing */
-	color: black; /* Use custom variable for text color */
+	color: black; /* text color */
 }
 
 /* Styles for the features grid */
@@ -41,7 +41,7 @@ main {
 
 .features-grid .feature-box {
 	border-radius: 4px; /* Set border radius */
-	background-color: #fff; /* Use custom variable for background color */
+	background-color: #fff; /* background color */
 	padding: 20px; /* Set padding */
 	cursor: pointer; /* Set cursor to pointer */
 }
