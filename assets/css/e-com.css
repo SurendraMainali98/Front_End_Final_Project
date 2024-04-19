@@ -319,7 +319,7 @@ p {
 
 /*media queries for reponsive design*/
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 935px) {
     /* Styles for screens up to 750px in width */
 	.itemPage img {
 		width: 200px; /* Adjust image width */
