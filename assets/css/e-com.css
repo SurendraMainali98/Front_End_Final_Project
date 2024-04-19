@@ -394,7 +394,7 @@ p {
 @media only screen and (max-width: 400px) {
     /* Styles for screens up to 400px in width */
 	.itemPage img {
-		width: 95%; /* Adjust image width */
+		width: 50%; /* Adjust image width */
 	}
 }
 
