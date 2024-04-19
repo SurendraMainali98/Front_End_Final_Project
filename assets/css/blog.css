@@ -41,13 +41,9 @@ main {
 
 .features-grid .feature-box {
 	border-radius: 4px; /* Set border radius */
-	background-color: var(--feature-box-color); /* Use custom variable for background color */
+	background-color: #fff; /* Use custom variable for background color */
 	padding: 20px; /* Set padding */
 	cursor: pointer; /* Set cursor to pointer */
-}
-
-.feature-box:hover {
-	background-color: var(--feature-box-hover-color); /* Change background color on hover */
 }
 
 /* Styles for paragraphs */
