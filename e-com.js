@@ -14,7 +14,6 @@ icon.addEventListener("click", () => {
 
 // Navbar
 let shops = document.getElementById("shops");
-let products = document.getElementById("products");
 let reviews = document.getElementById("reviews");
 let blogs = document.getElementById("blogs");
 let contacts = document.getElementById("contacts");
@@ -25,16 +24,6 @@ shops.addEventListener("click", () => {
     // Reset other links' colors
 	products.style.color = "black";
 	reviews.style.color = "black";
-	blogs.style.color = "black";
-	contacts.style.color = "black";
-});
-
-products.addEventListener("click", () => {
-    // Change color of clicked link
-	products.style.color = "rgb(4, 219, 219)";
-    // Reset other links' colors
-	reviews.style.color = "black";
-	shops.style.color = "black";
 	blogs.style.color = "black";
 	contacts.style.color = "black";
 });
