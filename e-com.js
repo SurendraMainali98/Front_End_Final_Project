@@ -120,7 +120,7 @@ crd.forEach(function (curValue) {
 
 // Connect
 function connect() {
-	let name = document.getElementById("fullname");
+	let names = document.getElementById("name");
 	let num = document.getElementById("number");
 	if (name.value == "" && num.value == "") {
 		alert("Fill Details");
