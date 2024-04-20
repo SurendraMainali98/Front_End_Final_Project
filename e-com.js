@@ -14,6 +14,7 @@ icon.addEventListener("click", () => {
 
 // Navbar
 let shops = document.getElementById("shops");
+let products = document.getElementById("products");
 let reviews = document.getElementById("reviews");
 let blogs = document.getElementById("blogs");
 let contacts = document.getElementById("contacts");
@@ -22,7 +23,18 @@ shops.addEventListener("click", () => {
     // Change color of clicked link
 	shops.style.color = "rgb(4, 219, 219)";
     // Reset other links' colors
+	products.style.color = "black";
 	reviews.style.color = "black";
+	blogs.style.color = "black";
+	contacts.style.color = "black";
+});
+
+products.addEventListener("click", () => {
+    // Change color of clicked link
+	products.style.color = "rgb(4, 219, 219)";
+    // Reset other links' colors
+	reviews.style.color = "black";
+	shops.style.color = "black";
 	blogs.style.color = "black";
 	contacts.style.color = "black";
 });
@@ -31,6 +43,7 @@ reviews.addEventListener("click", () => {
     // Change color of clicked link
 	reviews.style.color = "rgb(4, 219, 219)";
     // Reset other links' colors
+	products.style.color = "black";
 	shops.style.color = "black";
 	blogs.style.color = "black";
 	contacts.style.color = "black";
@@ -40,6 +53,7 @@ blogs.addEventListener("click", () => {
     // Change color of clicked link
 	blogs.style.color = "rgb(4, 219, 219)";
     // Reset other links' colors
+	products.style.color = "black";
 	reviews.style.color = "black";
 	shops.style.color = "black";
 	contacts.style.color = "black";
@@ -49,6 +63,7 @@ contacts.addEventListener("click", () => {
     // Change color of clicked link
 	contacts.style.color = "rgb(4, 219, 219)";
     // Reset other links' colors
+	products.style.color = "black";
 	reviews.style.color = "black";
 	blogs.style.color = "black";
 	shops.style.color = "black";
@@ -116,7 +131,7 @@ crd.forEach(function (curValue) {
 
 // Connect
 function connect() {
-	let names = document.getElementById("names");
+	let name = document.getElementById("fullname");
 	let num = document.getElementById("number");
 	if (name.value == "" && num.value == "") {
 		alert("Fill Details");
