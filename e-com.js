@@ -118,13 +118,4 @@ crd.forEach(function (curValue) {
 	});
 });
 
-// Connect
-function connect() {
-	let names = document.getElementById("name");
-	let num = document.getElementById("number");
-	if (name.value == "" && num.value == "") {
-		alert("Fill Details");
-	} else {
-		alert("Thanks For Connecting");
-	}
-}
+
